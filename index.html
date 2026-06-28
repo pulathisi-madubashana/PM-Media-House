@@ -1,0 +1,30 @@
+<!DOCTYPE html>  
+<html lang="si">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>PM Media House</title>
+    
+    <link rel="icon" type="image/jpeg" href="https://pulathisi-madubashana.github.io/site/IMG_20762.jpg">
+</head>
+<body style="margin: 0; padding: 0; overflow: hidden;">
+
+    <iframe src="https://script.google.com/macros/s/AKfycbz8R8Pj00wvxslphDOjFMKVB7RUJU2aawZeO5Ir_0oC2STBgnrlv1ztupQJJ66rdJbCoA/exec" 
+            allowfullscreen="true" 
+            style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; border: none;">
+    </iframe> 
+
+    <script> 
+        window.onload = function() { 
+            let iframe = document.querySelector('iframe');
+            if (iframe) {
+                iframe.requestFullscreen().catch((err) => {
+                    console.error(`Error attempting to enable full-screen mode: ${err.message}`);
+                });
+            }
+        };
+    </script>
+    
+</body>
+</html>
